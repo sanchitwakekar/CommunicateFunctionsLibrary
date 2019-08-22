@@ -19,4 +19,9 @@ public class RNCommunicateFunctionsLibraryModule extends ReactContextBaseJavaMod
   public String getName() {
     return "RNCommunicateFunctionsLibrary";
   }
+
+  @ReactMethod
+  public void show(String message) {
+    message = "hello" + message;   
+  }
 }
